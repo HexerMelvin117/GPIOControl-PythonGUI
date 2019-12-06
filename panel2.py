@@ -19,37 +19,43 @@ def gpio17on():
 	#os.system("sudo /./home/pi/gpio17on.sh")
 	apagado17.place_forget()
 	encendido17.place(x=40,y=130)
-	os.system("sudo echo 1 >> /./home/melvin/TradCompProyecto/status17.txt")
+	currentDT = datetime.datetime.now()
+	os.system("sudo echo" + " '1 "+ str(currentDT) +"'"+">> /./home/melvin/TradCompProyecto/status17.txt")
 
 def gpio17off():
     #os.system("sudo /./home/pi/gpio17off.sh")
 	encendido17.place_forget()
 	apagado17.place(x=40,y=130)
-	os.system("sudo echo 0 >> /./home/melvin/TradCompProyecto/status17.txt")
+	currentDT = datetime.datetime.now()
+	os.system("sudo echo" + " '0 "+ str(currentDT) +"'"+">> /./home/melvin/TradCompProyecto/status17.txt")
 
 def gpio27on():
 	#os.system("sudo /./home/pi/gpio27on.sh")
 	apagado27.place_forget()
 	encendido27.place(x=340,y=130)
-	os.system("sudo echo 1 >> /./home/melvin/TradCompProyecto/status27.txt")
+	currentDT = datetime.datetime.now()
+	os.system("sudo echo" + " '1 "+ str(currentDT) +"'"+">> /./home/melvin/TradCompProyecto/status27.txt")
 
 def gpio27off():
 	#os.system("sudo /./home/pi/gpio27off.sh")
 	encendido27.place_forget()
 	apagado27.place(x=340,y=130)
-	os.system("sudo echo 0 >> /./home/melvin/TradCompProyecto/status27.txt")
+	currentDT = datetime.datetime.now()
+	os.system("sudo echo" + " '0 "+ str(currentDT) +"'"+">> /./home/melvin/TradCompProyecto/status27.txt")
 
 def gpio22on():
 	#os.system("sudo /./home/pi/gpio22on.sh")
 	apagado22.place_forget()
 	encendido22.place(x=240,y=280)
-	os.system("sudo echo 1 >> /./home/melvin/TradCompProyecto/status22.txt")
+	currentDT = datetime.datetime.now()
+	os.system("sudo echo" + " '1 "+ str(currentDT) +"'"+">> /./home/melvin/TradCompProyecto/status22.txt")
 
 def gpio22off():
 	#os.system("sudo /./home/pi/gpio22off.sh")
 	encendido22.place_forget()
 	apagado22.place(x=240,y=280)
-	os.system("sudo echo 0 >> /./home/melvin/TradCompProyecto/status22.txt")
+	currentDT = datetime.datetime.now()
+	os.system("sudo echo" + " '0 "+ str(currentDT) +"'"+">> /./home/melvin/TradCompProyecto/status22.txt")
 
 #font settings
 text_title=tkFont.Font(family="Helvetica",size=18)
